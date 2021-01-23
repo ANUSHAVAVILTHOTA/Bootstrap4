@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+	<meta charset="utf-8">
+	<!-- it will identify the viewport ---------mobile tablet laptop desktop-->
+	
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link href="favicon.png" rel="icon">
+	 <!-- Bootstrap CDN LINKS---- -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+<!-- 
+flex classes to align the content
+using this we can create container and we can align the child items
+-->
+ 
+
+  <div class="container">
+  	<div class="d-flex p-3 flex-wrap bg-warning text-white">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-success">Flex Item4</div>
+  	</div>
+  </div>
+  <div class="container mt-3">
+  	<div class="d-inline-flex flex-wrap p-3 bg-warning text-white">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  </div>
+
+  <div class="container mt-3">
+  	<h1>Horizontal Dir(From Left)-Default</h1>
+  	<div class="d-flex flex-wrap p-3 flex-row bg-warning text-white">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  </div>
+
+   <div class="container mt-3">
+  	<h1>Horizontal Dir-(From Right) Reverse </h1>
+  	<div class="d-flex p-3 flex-wrap flex-row-reverse bg-warning text-white">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+	    <div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  </div>
+
+<!--
+d-flex
+d-inline-flex
+flex-row --default
+flex-row-reverse
+-->
+
+<!-- 
+d-flex
+flex-column
+flext-column-reverse
+-->
+<!--
+will get items one by one =====flex-column===1,2,3
+will get the items one by one and in reverse dir====flex-column-reverse==3,2,1
+
+mt-margin top
+p --padding
+pt-padding top
+-->
+<div class="container">
+  	<h1>Vertical Dir </h1>
+  	<div class="d-flex p-3 flex-column bg-warning text-white">
+  		<div class="p-2 bg-success">Flex Item1</div>
+	  	<div class="p-2 bg-primary">Flex Item2</div>
+	  	<div class="p-2 bg-info">Flex Item3</div>
+
+  	</div>
+  </div>
+
+  <div class="container">
+  	<h1>Vertical Dir Reverse</h1>
+  	<div class="d-flex p-3 flex-column-reverse bg-warning text-white">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+	    
+  	</div>
+  </div>
+
+<!-- 
+start====left
+end====right side
+center====middle
+between=====equal space between flex items
+around====equal space around flex items
+-->
+<div class="container mt-3">
+	<div class="d-flex justify-content-start p-3 bg-warning text-white mt-3">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  	<div class="d-flex justify-content-end p-3 bg-warning text-white mt-3">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  	<div class="d-flex justify-content-center p-3 bg-warning text-white mt-3">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  	<div class="d-flex justify-content-between p-3 bg-warning text-white mt-3">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+  	<div class="d-flex justify-content-around p-3 bg-warning text-white mt-3">
+  		<div class="p-4 bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4 bg-info">Flex Item3</div>
+  	</div>
+</div>
+
+
+<div class="container mt-5">
+	<h2>Equal width of all items </h2>
+	<div class="d-flex p-3 bg-warning text-white mt-3">
+  		<div class="p-4 flex-fill bg-success">Flex Item1</div>
+	  	<div class="p-4 flex-fill bg-primary">Flex Item2</div>
+	  	<div class="p-4 flex-fill bg-info">Flex Item3</div>
+  	</div>
+</div>
+
+<div class="container mt-5">
+	<h2>Grow classes will take rest of the space in container</h2>
+	<div class="d-flex p-3 bg-warning text-white mt-3">
+  		<div class="p-4 flex-grow-1 bg-success">Flex Item1</div>
+	  	<div class="p-4 flex-grow-1 bg-primary">Flex Item2</div>
+	  	<div class="p-4 flex-grow-1 bg-info">Flex Item3</div>
+  	</div>
+</div>
+
+<!--
+order-0
+order-12
+
+less number has more value
+
+item3  item1  item2
+ -->
+<div class="container mt-5">
+	<h2>Order Classes</h2>
+	<div class="d-flex p-3 bg-warning text-white mt-3">
+  		<div class="p-4 order-2 bg-success">Flex Item1</div>
+	  	<div class="p-4 order-3 bg-primary">Flex Item2</div>
+	  	<div class="p-4 order-1 bg-info">Flex Item3</div>
+  	</div>
+</div>
+<!-- 
+mr-auto===remaining items towards right
+ml-auto====before items towards left
+-->
+<div class="container">
+	<h2>Auto Margins</h2>
+	<div class="d-flex p-3 bg-warning text-white mt-3">
+  		<div class="p-4 mr-auto bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4  bg-info">Flex Item3</div>
+  	</div>
+</div>
+
+<div class="container">
+	<h2>Auto Margins</h2>
+	<div class="d-flex p-3 bg-warning text-white mt-3">
+  		<div class="p-4  bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4  ml-auto bg-info">Flex Item3</div>
+  	</div>
+</div>
+
+
+<div class="container">
+	<h2></h2>
+	<div class="d-flex flex-wrap p-3 bg-warning text-white mt-3">
+  		<div class="p-4  bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item5</div>
+	  	<div class="p-4 bg-primary">Flex Item6</div>
+	  	<div class="p-4   bg-info">Flex Item7</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item5</div>
+	  	<div class="p-4 bg-primary">Flex Item6</div>
+	  	<div class="p-4   bg-info">Flex Item7</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item5</div>
+	  	<div class="p-4 bg-primary">Flex Item6</div>
+	  	<div class="p-4   bg-info">Flex Item7</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+  	</div>
+</div>
+
+<div class="container">
+	<h2></h2>
+	<div class="d-flex flex-wrap-reverse p-3 bg-warning text-white mt-3">
+  		<div class="p-4  bg-success">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item2</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item5</div>
+	  	<div class="p-4 bg-primary">Flex Item6</div>
+	  	<div class="p-4   bg-info">Flex Item7</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item5</div>
+	  	<div class="p-4 bg-primary">Flex Item6</div>
+	  	<div class="p-4   bg-info">Flex Item7</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4 bg-primary">Flex Item8</div>
+	  	<div class="p-4   bg-info">Flex Item9</div>
+	  	<div class="p-4   bg-info">Flex Item3</div>
+	  	<div class="p-4 bg-primary">Flex Item4</div>
+	  	<div class="p-4   bg-info">Flex Item8</div>
+	  	<div class="p-4 bg-primary">Flex Item1</div>
+	  	<div class="p-4   bg-info">Flex Item1</div>
+	  	<div class="p-4 bg-primary">Flex Item1</div>
+	  	<div class="p-4   bg-info">Flex Item1</div>
+  	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
