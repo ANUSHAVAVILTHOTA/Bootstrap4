@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- 
+for space b/n ele form group
+styles for input tag form-control
+12
+6 6
+
+row 12
+col 1-12
+-->
+<div class="container">
+	<div class="row">
+	<div class="col-6">
+	<form>
+		<div class="form-group">
+			<label for="fname">Full Name</label>
+			<input type="text" name=""  class="form-control" id="fname">
+	    </div>
+		<div class="form-group">
+			<label for="pswd">Password</label>
+			<input type="password" name="" class="form-control" id="pswd">
+        </div>
+        <div class="form-group">
+			<label for="em">Email</label>
+			<input type="email" name="" class="form-control" id="em">
+        </div>
+        <div class="form-group">
+			<input type="checkbox" name="English" id="c1" class="form-check-input">
+			<label for="c1">Check Me</label>
+        </div>
+        <div class="form-group">
+			<input type="radio" name="English" id="c1" class="form-check-input">
+			<label for="c1">Check Me</label>
+        </div>
+		<div class="form-group">
+			<label for="d1">Select DOB</label>
+			<input type="date" name="" class="form-control" id="d1">
+        </div>
+        <div class="form-group">
+			<label for="color">Color</label>
+			<input type="color" name="" class="form-control" id="color">
+        </div>
+         <div class="form-group">
+			<label for="search1">SEarch</label>
+			<input type="search" name="" class="form-control" id="search1">
+        </div>
+         <div class="form-group">
+			<label for="t1">Time</label>
+			<input type="time" name="" class="form-control" id="t1">
+        </div>
+        <div class="form-group">
+			<label for="w1">Week</label>
+			<input type="week" name="" class="form-control" id="w1">
+        </div>
+         <div class="form-group">
+			<label for="m">Month</label>
+			<input type="month" name="" class="form-control" id="m">
+        </div>
+         <div class="form-group">
+			<label for="n">Number</label>
+			<input type="number" name="" class="form-control" id="n">
+        </div>
+
+       <div class="form-group">
+       	<select class="form-control">
+        	<option>HTML</option>
+        	<option>HTML</option>
+        	<option>HTML</option>
+        	<option>HTML</option>
+        </select>
+       </div>
+
+        <div class="form-group">
+       	<select multiple class="form-control">
+        	<option>HTML</option>
+        	<option>HTML</option>
+        	<option>HTML</option>
+        	<option>HTML</option>
+        </select>
+       </div>
+        
+        <div class="form-group">
+        	<label for="">Upload File</label>
+           <input type="file" name="" class="form-control">
+        </div>
+
+        <h1>Size</h1>
+        <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control form-control-lg">
+        </div>
+        <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control">
+        </div>
+        <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control form-control-sm">
+        </div>
+
+         <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control" value="ABCD" readonly>
+        </div>
+         <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" readonly class="form-control-plaintext" value="ABCD" >
+        </div>
+
+
+
+
+	</form>
+</div>
+</div>
+</div>
+
+<div class="container">
+	<h1>Inline Forms</h1>
+	<form class="form-inline">
+		<div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control">
+        </div>
+        <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control">
+        </div>
+        <div class="form-group">
+        	<label>Fname</label>
+        	<input type="text" name="" class="form-control">
+        </div>
+
+
+           
+	</form>
+</div>
+
+<div class="container">
+	<div class="form-group">
+		<div class="form-check form-check-inline">
+			<input type="checkbox" name="" class="form-check-input" id="c1">
+			<label for="c1">H1</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="checkbox" name="" class="form-check-input" id="c2">
+			<label for="c2">H2</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="checkbox" name="" class="form-check-input" id="c3">
+			<label for="c3">H3</label>
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	<div class="form-group">
+		<div class="form-check form-check-inline">
+			<input type="radio" name="" class="form-check-input" id="c1">
+			<label for="c1">H1</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="radio" name="" class="form-check-input" id="c2">
+			<label for="c2">H2</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="radio" name="" class="form-check-input" id="c3">
+			<label for="c3">H3</label>
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+	
+		    <div class="form-group">
+			<input type="radio" name="" class="form-check-input" id="c1">
+			<label for="c1">H1</label>
+			</div>
+	
+		    <div class="form-group">
+			<input type="radio" name="" class="form-check-input" id="c2">
+			<label for="c2">H2</label>
+		    </div>
+		    <div class="form-group">
+			<input type="radio" name="" class="form-check-input" id="c3">
+			<label for="c3">H3</label>
+		    </div>
+		
+</div>
+
+<div class="container">
+<form>
+	<div class="row">
+		<div class="col-3">
+			<label>Fname</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-5">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-2">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-2">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+
+	</div>
+</form>
+</div>
+
+<div class="container">
+<form>
+	<div class="row">
+		<div class="col-auto">
+			<label>Fname</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-auto">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-auto">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-auto">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+		<div class="col-auto">
+			<label>PSWD</label>
+			<input type="text" name="" class="form-control">
+		</div>
+
+		
+
+	</div>
+</form>
+</div>
+
+<div class="container">
+	<h1>Validations</h1>
+
+	<form class="was-validated">
+		<div class="form-group">
+			<label for="uname">Uname</label>
+			<input type="text" name="" class="form-control" id="uname" required>
+			<small>Pls enter full name without spaces</small>
+			<div class="valid-feedback">Valid</div>
+			<div class="invalid-feedback">Pls Fill this feild</div>
+		</div>
+		<div class="form-group">
+			<label for="pswd">PASSWORD</label>
+			<input type="password" name="ps" class="form-control" id="pswd" required>
+			<small>Password must have 8 chars</small>
+
+			<!-- when we dont have any data in the input feild we will get invalid feedback msg-->
+			<div class="valid-feedback">Valid PASSWORD</div>
+			<div class="invalid-feedback">Pls Fill this feild</div>
+		</div>
+		<div class="form-group">
+			<label for="Email">Email</label>
+			<input type="email" name="" class="form-control" id="Email" required>
+			<small>some content @ one char</small>
+			<div class="valid-feedback">Valid Email</div>
+			<div class="invalid-feedback">Pls Fill this feild</div>
+		</div>
+
+	</form>
+</div>
+
+type="password"
+
+
+if(type==="password")
+    type="text"
+ else{
+ type-"password"
+}
+
+</body>
+</html>
